@@ -20,8 +20,8 @@ def trad_fib(n):
 
 	while b < n:
 		print(a, end=" ")
-		old_b = b
-		b = a + b
+		old_b = b	#Keep the original values of b
+		b = a + b	#The second number in the series
 		a = old_b
 	print(a, end=" ")
 	print()
@@ -34,7 +34,7 @@ print("The Fibonacci numbers that is less than 400. . .", x)
 print()
 
 x = trad_fib(2000)
-print("The Fibonacci numbers that is less than 2000. . .", x)
+print("The Fibonacci numbers that are less than 2000. . .", x)
 #This will present numbers under 2000
 
 print()
